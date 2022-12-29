@@ -9,30 +9,30 @@ Variables
 
 :root {
   /* dark shades of primary color*/
-  --clr-primary-1: hsl(205, 86%, 17%);
-  --clr-primary-2: hsl(205, 77%, 27%);
-  --clr-primary-3: hsl(205, 72%, 37%);
-  --clr-primary-4: hsl(205, 63%, 48%);
+  --clr-primary-1: hsl(49, 100%, 50%);
+  --clr-primary-2: hsl(49, 97%, 58%);
+  --clr-primary-3: hsl(49, 93%, 64%);
+  --clr-primary-4: hsl(49, 91%, 78%);
   /* primary/main color */
-  --clr-primary-5: hsl(205, 78%, 60%);
+  --clr-primary-5: hsl(49, 100%, 50%);
   /* lighter shades of primary color */
-  --clr-primary-6: hsl(205, 89%, 70%);
-  --clr-primary-7: hsl(205, 90%, 76%);
-  --clr-primary-8: hsl(205, 86%, 81%);
-  --clr-primary-9: hsl(205, 90%, 88%);
-  --clr-primary-10: hsl(205, 100%, 96%);
+  --clr-primary-6: hsl(206, 14%, 20%);
+  --clr-primary-7: hsl(206, 24%, 30%);
+  --clr-primary-8: hsl(206, 34%, 40%);
+  --clr-primary-9: hsl(206, 44%, 50%);
+  --clr-primary-10: hsl(206, 54%, 60%);
   /* darkest grey - used for headings */
-  --clr-grey-1: hsl(209, 61%, 16%);
-  --clr-grey-2: hsl(211, 39%, 23%);
-  --clr-grey-3: hsl(209, 34%, 30%);
-  --clr-grey-4: hsl(209, 28%, 39%);
+  --clr-grey-1: hsl(206, 14%, 20%);
+  --clr-grey-2: hsl(206, 14%, 30%);
+  --clr-grey-3: hsl(206, 14%, 40%);
+  --clr-grey-4: hsl(206, 14%, 50%);
   /* grey used for paragraphs */
-  --clr-grey-5: hsl(210, 22%, 49%);
-  --clr-grey-6: hsl(209, 23%, 60%);
-  --clr-grey-7: hsl(211, 27%, 70%);
-  --clr-grey-8: hsl(210, 31%, 80%);
-  --clr-grey-9: hsl(212, 33%, 89%);
-  --clr-grey-10: hsl(210, 36%, 96%);
+  --clr-grey-5: hsl(206, 14%, 20%);
+  --clr-grey-6: hsl(206, 14%, 30%);
+  --clr-grey-7: hsl(206, 14%, 40%);
+  --clr-grey-8: hsl(206, 14%, 50%);
+  --clr-grey-9: hsl(206, 14%, 60%);
+  --clr-grey-10: hsl(210, 14%, 90%);
   --clr-white: #fff;
   --clr-red-dark: hsl(360, 67%, 44%);
   --clr-red-light: hsl(360, 71%, 66%);
@@ -65,7 +65,7 @@ Global Styles
 body {
   font-family: var(--ff-secondary);
   background: var(--clr-grey-10);
-  color: var(--clr-grey-1);
+  color: var(--clr-primary-6);
   line-height: 1.5;
   font-size: 0.875rem;
 }
@@ -236,10 +236,11 @@ main {
 }
 #info {
   margin-bottom: 0.75rem;
+  color: var(--clr-primary-6);
 }
 .prev-btn,
 .next-btn {
-  color: var(--clr-primary-7);
+  color: var(--clr-primary-6);
   font-size: 1.25rem;
   background: transparent;
   border-color: transparent;
@@ -253,16 +254,16 @@ main {
 }
 .random-btn {
   margin-top: 0.5rem;
-  background: var(--clr-primary-10);
-  color: var(--clr-primary-5);
+  background: var(--clr-primary-5);
+  color: var(--clr-primary-6);
   padding: 0.25rem 0.5rem;
   text-transform: capitalize;
   border-radius: var(--radius);
   transition: var(--transition);
-  border-color: var(--clr-primary-5);
+  border-color: var(--clr-primary-6);
   cursor: pointer;
 }
 .random-btn:hover {
-  background: var(--clr-primary-5);
+  background: var(--clr-primary-6);
   color: var(--clr-primary-1);
 }
